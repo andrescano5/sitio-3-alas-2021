@@ -1,10 +1,23 @@
+:root{
+    /* las variables guardan valores en la memoria del navegador,
+    esto me permite reutilizarlas y ordenar mejor mi código*/
+
+    /* Esto es declarar las variables y asignarles un valor*/
+    --naranja:#f90;
+    --negro:#000;
+    --negro2:#27262b;
+    --blanco:#fff;
+}
+
+
 body{
     /*poner color de fondo para usuarios con mala conexión por si la imagen no carga*/
-    background-color: #27262b;
+    background-color: var(--negro2);
     background-image:url(images/pattern.jpg);
+    font-family: Arial, Helvetica, sans-serif;
     /*
         ¿Repetir imagen de fondo?
-        background-repeat
+        background-repeat:
             repeat: repetir en X y en Y(predeterminado)
             repeat-x: Eje X
             repeat-y: Eje Y
@@ -17,9 +30,21 @@ body{
 
 .cabecera, .contenedor{
     max-width: 1000px;
-    margin:auto;
+    margin:auto; 
 }
 
+.cabecera{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    align-items: center;
+}
+
+.cabecera h1{
+    color: var(--naranja);
+    font-size:24px;
+}
 .contenedor{
-    background-color:whitesmoke;
+    /*utilizar la variable previamente declarada*/
+    background-color: var(--blanco);
 }
