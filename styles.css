@@ -1,6 +1,18 @@
 body{
+    /*poner color de fondo para usuarios con mala conexión por si la imagen no carga*/
     background-color: #27262b;
-    background-image:url(images/pattern.jpg) ;
+    background-image:url(images/pattern.jpg);
+    /*
+        ¿Repetir imagen de fondo?
+        background-repeat
+            repeat: repetir en X y en Y(predeterminado)
+            repeat-x: Eje X
+            repeat-y: Eje Y
+            no-repeat: No repite nada, queda solo la imagen en la esquina superior izquierda
+    
+        Imagen que cubra el 100% del fondo pero sin perder proporción
+        background-size:cover;
+    */
 }   
 
 .cabecera, .contenedor{
