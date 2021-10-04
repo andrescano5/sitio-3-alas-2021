@@ -142,4 +142,17 @@ body{
 
 .productos{
     background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
 }
+
+.subtitulo-lampara{
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.contenedor-lampara{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
