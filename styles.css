@@ -9,6 +9,7 @@
     --negro2:#27262b;
     --blanco:#fff;
     --espacio:40px;
+    --gris:#bbb;
 }
 
 *{
@@ -115,7 +116,6 @@ body{
 */
 
 .principal{
-    background-color: yellowgreen;
     display: grid;
     grid-template-columns: 280px 1fr;
     gap: 20px;
@@ -141,14 +141,12 @@ body{
 */
 
 .productos{
-    background-color: blue;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:30px;
 }
 
 .subtitulo-lampara{
-    padding-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -156,4 +154,44 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:30px;
+}
+
+/*
+    --------------------------------
+               Newsletter
+    --------------------------------
+*/
+
+.news{
+    /*degradados en código*/
+    background-image: linear-gradient(var(--blanco)70%,var(--gris));
+    margin-bottom: var(--espacio);
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--negro2);
+    padding:10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.news-info,
+.news-info p{
+    padding-left: 40px;
+}
+
+.news-form{
+    flex-grow: 1;
+    /*text-align: right;  se puede usar esta opcion sin el flex*/
+    justify-content: flex-end;
+    display: flex;
+}
+
+.news-form_boton{
+    /*sacarle todo el fondo al boton y el borde predeterminado*/
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 10px;
 }
